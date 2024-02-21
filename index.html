@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="company">Select Company:</label>
+        <select id="company" onchange="updateJobMenu()">
+            <option value="" disabled selected>Select Company</option>
+            <option value="Company 1">Company 1</option>
+            <option value="Company 2">Company 2</option>
+            <option value="Company 3">Company 3</option>
+        </select>
+        <br>
+        <label for="job">Select Job:</label>
+        <select id="job">
+            <option value="" disabled selected>Select Job</option>
+        </select>
+        <br>
+        <button onclick="applyJob()">Apply</button>
+    </div>
+    <script src="./proxy.js"></script>
+</body>
+</html>
