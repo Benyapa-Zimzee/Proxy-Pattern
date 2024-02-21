@@ -1,9 +1,7 @@
-// Job Interface
 class Job {
     apply() {}
 }
 
-// Proxy Job
 class ProxyJob extends Job {
     constructor(title) {
         super();
@@ -20,14 +18,12 @@ class ProxyJob extends Job {
     }
 }
 
-// Create companies and proxy jobs
 const companies = {
     "Company 1": new ProxyJob("UX/UI\nBusiness Analyst\nFull Stack"),
     "Company 2": new ProxyJob("Full Stack\nSystem Analyst\nUX/UI"),
     "Company 3": new ProxyJob("Full Stack\nBackend\nFrontend")
 };
 
-// Update job menu based on selected company
 function updateJobMenu() {
     const companySelect = document.getElementById("company");
     const selectedCompany = companySelect.value;
@@ -45,7 +41,6 @@ function updateJobMenu() {
     }
 }
 
-// Apply for a job
 function applyJob() {
     const companySelect = document.getElementById("company");
     const selectedCompany = companySelect.value;
